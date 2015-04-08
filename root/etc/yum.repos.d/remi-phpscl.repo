@@ -1,0 +1,9 @@
+[remi-phpscl]
+name=Les RPM de remi pour Enterprise Linux 6 - $basearch
+#baseurl=http://rpms.famillecollet.com/enterprise/6/remi/$basearch/
+mirrorlist=http://rpms.famillecollet.com/enterprise/6/remi/mirror
+enabled=0
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-remi
+exclude=php-* mysql* phpMyAdmin* roundcubemail* redis* wordpress* memcached* glpi* ocsinventory* fusioninventory* 
+
