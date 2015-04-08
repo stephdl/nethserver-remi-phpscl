@@ -1,9 +1,0 @@
-#!/bin/sh
-
-/sbin/e-smith/check4RemiPhpSclUpdates >/dev/null 2>&1
-EXITVALUE=$?
-if [ $EXITVALUE != 0 ]; then
-    /usr/bin/logger -t check4RemiPhpSclUpdates "ALERT exited abnormally with [$EXITVALUE]"
-fi
-exit 0
-
