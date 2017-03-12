@@ -1,7 +1,7 @@
 Summary: NethServer configuration for remi-phpscl
 Name: nethserver-remi-phpscl
 Version: 1.0.1
-Release: 1%{?dist}
+Release: 2%{?dist}
 License: GPL
 Source: %{name}-%{version}.tar.gz
 BuildArch: noarch
@@ -37,8 +37,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f e-smith-%{version}-filelist
 %defattr(-,root,root)
+%doc COPYING
 
 %changelog
+* Sun Mar 12 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.1-2-ns6
+- GPL license
+
 * Sun Jan 15 2017 Stephane de Labrusse <stephdl@de-labrusse.fr> - 1.0.1-1-ns6
 - Owncloud excluded
 
